@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1c005ec541.js" crossorigin="anonymous"></script>
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="p-9 max-w-5xl mx-auto">
+    <header>
+        <h1 class="text-center text-5xl font-bold text-sky-500">Money Master <i class="fa-solid fa-sack-dollar text-yellow-600"></i></h1>
+    </header>
+    <main>
+        <div class="mt-7 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div>
+                <img src="./images/money.jpg" alt="">
+            </div>
+            <div class="flex justify-center items-center bg-slate-50 ">
+                <div class="p-2 text-center">
+                    <h3 class="text-2xl text-center font-bold mb-4">Income</h3>
+                    <label for="income-money" class="text-lg font-medium">Income:</label>
+                    <input type="number" name="" id="income-money" class="p-1 ml-2 w-1/2 md:w-1/3 bg-slate-200">
+                    <h3 class="text-2xl text-center font-bold my-4">Expenses</h3>
+                    <label for="food-money" class="ml-[4%] text-lg font-medium">Food:</label>
+                    <input type="number" name="" id="food-money" class="p-1 ml-2 w-1/2 md:w-1/3 bg-slate-200 mb-3"><br>
+                    <label for="rent-money" class="ml-[4%] text-lg font-medium">Rent:</label>
+                    <input type="number" name="" id="rent-money" class="p-1 ml-2 w-1/2 md:w-1/3 bg-slate-200 mb-3"><br>
+                    <label for="clothes-money" class="text-lg font-medium">Clothes:</label>
+                    <input type="number" name="" id="clothes-money" class="p-1 ml-2 w-1/2 md:w-1/3 bg-slate-200 mb-3"><br>
+                    <button class="bg-sky-500 text-white py-1 px-7 rounded-lg text-lg font-semibold hover:ring-2 hover:ring-sky-900 hover:bg-white hover:text-sky-600" id="btn-calculate">Calculate</button>
+                    <p class="mt-4 text-xl font-medium">Total Expenses: <span class="text-3xl font-bold" id="total-expenses">00</span></p>
+                    <p class="mt-2 text-xl font-medium">Balance: <span class="text-3xl font-bold" id="balance-money">00</span></p>
+                    <p class="mt-3 text-xl font-semibold">Save: <input type="number" name="" id="save-percentage" class="bg-slate-200 mx-2 px-3 py-1 w-1/4">% <button class="bg-sky-500 text-white py-1 px-7 rounded-lg text-lg font-semibold hover:ring-2 hover:ring-sky-900 hover:bg-white hover:text-sky-600" id="btn-save">Save</button></p>
+                    <p class="mt-4 text-xl font-medium">Saving Amount: <span class="text-3xl font-bold" id="saving-money">00</span></p>
+                    <p class="mt-2 text-xl font-medium">Remaining Balance: <span class="text-3xl font-bold" id="remaining-money">00</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/money.js"></script>
+</body>
+</html>
