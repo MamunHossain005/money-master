@@ -21,7 +21,7 @@ document.getElementById('btn-calculate').addEventListener('click', ()=> {
 document.getElementById('btn-save').addEventListener('click', ()=> {
     const balance = getValueById('balance-money');
     const percentage = getValueById('save-percentage');
-    const savings = balance * (percentage / 100);
+    const savings = (balance * (percentage / 100)).toFixed(2);
     const remaining = balance - savings;
     if(percentage > 100) {
         alert('Saving percentage can not be greater than 100%!!');
